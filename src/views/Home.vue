@@ -39,32 +39,31 @@
       <div class="relative w-full px-4 sm:px-6 lg:px-8 py-20">
         <div class="max-w-[1200px] mx-auto">
           <div class="grid md:grid-cols-2 gap-24 items-center">
-            <!-- 左侧文字内容 -->
-            <div class="text-left">
-              <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight animate-fade-in-up">
-                代码未来，<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">智创无限</span>
-              </h1>
-              <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up animation-delay-200">
-                专注高端软件定制与数字化转型解决方案<br>
-                为全球企业提供技术赋能
-              </p>
-              <!-- <p class="text-lg md:text-xl text-blue-200 font-medium mb-8 italic animate-fade-in-up animation-delay-400">
-                愿景：用代码重构商业价值，让技术成为您的核心竞争力。
-              </p> -->
-              <!-- 特别承诺 -->
-              <div class="inline-block bg-gradient-to-r from-blue-600/90 to-blue-700/90 text-white px-8 py-4 rounded-xl shadow-lg hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 mb-12 animate-fade-in-up animation-delay-500">
-                <p class="text-xl font-medium">特别承诺：首版不满意免费返工！</p>
-              </div>
-              <div class="flex flex-col sm:flex-row gap-6 animate-fade-in-up animation-delay-600">
-                <button class="group bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-4 rounded-xl text-lg font-medium hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 flex items-center justify-center">
-                  <Rocket class="mr-2 h-5 w-5 group-hover:animate-bounce" />
-                  开始合作
-                </button>
-                <button class="group border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-xl text-lg font-medium hover:bg-blue-400/10 transition-all duration-300 flex items-center justify-center">
-                  <Play class="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                  了解更多
-                </button>
+            <!-- 左侧内容 -->
+            <div class="relative z-10 lg:w-1/2">
+              <div class="text-center lg:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                  <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">专业软件开发</span>
+                  <br />
+                  <span class="text-white">解决方案提供商</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
+                  专注于为企业提供全方位的软件开发服务，包括全栈开发、云服务、DevOps、安全合规等解决方案
+                </p>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-6">
+                  <div class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                    <span class="text-gray-300">10+年行业经验</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                    <span class="text-gray-300">300+成功案例</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                    <span class="text-gray-300">50+技术专家</span>
+                  </div>
+                </div>
               </div>
             </div>
 
