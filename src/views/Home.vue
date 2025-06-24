@@ -7,17 +7,18 @@
           <div class="flex justify-between items-center h-16">
             <div class="flex items-center">
               <div class="flex flex-col">
-                <span class="text-xl font-bold text-white">代码未来</span>
-                <span class="text-sm text-blue-400">智创无限</span>
+                <div class="bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent text-2xl font-bold tracking-wider">
+                  <span class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-3 py-1 rounded-lg shadow-lg shadow-blue-500/30">BR</span>
+                </div>
               </div>
             </div>
             <div class="hidden md:flex items-center space-x-8">
-              <a href="#home" @click.prevent="scrollToSection('home')" class="text-gray-300 hover:text-blue-400 transition-colors">首页</a>
-              <a href="#services" @click.prevent="scrollToSection('services')" class="text-gray-300 hover:text-blue-400 transition-colors">服务领域</a>
-              <a href="#process" @click.prevent="scrollToSection('process')" class="text-gray-300 hover:text-blue-400 transition-colors">服务流程</a>
-              <a href="#advantages" @click.prevent="scrollToSection('advantages')" class="text-gray-300 hover:text-blue-400 transition-colors">核心优势</a>
-              <a href="#value" @click.prevent="scrollToSection('value')" class="text-gray-300 hover:text-blue-400 transition-colors">客户价值</a>
-              <button class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300">联系我们</button>
+              <a href="#home" @click.prevent="scrollToSection('home')" class="text-gray-300 hover:text-blue-400 transition-colors">Home</a>
+              <a href="#services" @click.prevent="scrollToSection('services')" class="text-gray-300 hover:text-blue-400 transition-colors">Services</a>
+              <a href="#process" @click.prevent="scrollToSection('process')" class="text-gray-300 hover:text-blue-400 transition-colors">Process</a>
+              <a href="#advantages" @click.prevent="scrollToSection('advantages')" class="text-gray-300 hover:text-blue-400 transition-colors">Advantages</a>
+              <a href="#value" @click.prevent="scrollToSection('value')" class="text-gray-300 hover:text-blue-400 transition-colors">Value</a>
+              <button class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300">Contact Us</button>
             </div>
           </div>
         </div>
@@ -30,8 +31,8 @@
       <div class="absolute inset-0">
         <div class="absolute inset-0 bg-gradient-to-r from-blue-950/95 to-slate-900/95"></div>
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent"></div>
-        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80" 
-             alt="背景" 
+        <img src="../assets/bg.png" 
+             alt="Background" 
              class="w-full h-full object-cover opacity-20"
         />
       </div>
@@ -42,26 +43,25 @@
             <!-- 左侧内容 -->
             <div class="relative z-10 lg:w-1/2">
               <div class="text-center lg:text-left">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                  <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">专业软件开发</span>
-                  <br />
-                  <span class="text-white">解决方案提供商</span>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                  <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 whitespace-nowrap">Professional Software Development</span>
+                  <span class="text-white whitespace-nowrap">Solution Provider</span>
                 </h1>
                 <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
-                  专注于为企业提供全方位的软件开发服务，包括全栈开发、云服务、DevOps、安全合规等解决方案
+                  Focused on providing comprehensive software development services for enterprises, including full-stack development, cloud services, DevOps, security compliance and other solutions
                 </p>
                 <div class="flex flex-wrap justify-center lg:justify-start gap-6">
                   <div class="flex items-center space-x-2">
                     <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                    <span class="text-gray-300">10+年行业经验</span>
+                    <span class="text-gray-300">10+ Years Experience</span>
                   </div>
                   <div class="flex items-center space-x-2">
                     <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                    <span class="text-gray-300">300+成功案例</span>
+                    <span class="text-gray-300">300+ Success Cases</span>
                   </div>
                   <div class="flex items-center space-x-2">
                     <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                    <span class="text-gray-300">50+技术专家</span>
+                    <span class="text-gray-300">50+ Tech Experts</span>
                   </div>
                 </div>
               </div>
@@ -106,10 +106,10 @@
                 </div>
                 <!-- 装饰性标签 -->
                 <div class="absolute top-1/4 left-1/4 bg-gradient-to-r from-blue-500/90 to-blue-600/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg animate-float animation-delay-1400">
-                  <p class="text-white font-medium">微服务</p>
+                  <p class="text-white font-medium">Microservices</p>
                 </div>
                 <div class="absolute bottom-1/4 right-1/4 bg-gradient-to-r from-blue-600/90 to-blue-500/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg animate-float animation-delay-1600">
-                  <p class="text-white font-medium">云原生</p>
+                  <p class="text-white font-medium">Cloud Native</p>
                 </div>
               </div>
             </div>
@@ -122,8 +122,8 @@
     <section id="services" class="relative py-24 bg-gradient-to-br from-zinc-900 via-gray-900 to-zinc-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">服务领域</h2>
-          <p class="text-xl text-gray-300">全方位技术解决方案</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Service Areas</h2>
+          <p class="text-xl text-gray-300">Comprehensive Technical Solutions</p>
         </div>
         
         <div class="grid md:grid-cols-2 gap-8">
@@ -136,30 +136,30 @@
                   <Code2 class="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-white">全栈软件开发</h3>
+                  <h3 class="text-xl font-semibold text-white">Full-Stack Software Development</h3>
                 </div>
               </div>
               <div class="space-y-4">
-                <p class="text-gray-300">提供从前端到后端的完整技术解决方案</p>
+                <p class="text-gray-300">Providing complete technical solutions from frontend to backend</p>
                 <div class="grid grid-cols-2 gap-4">
                   <div class="space-y-2">
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">Web应用开发</span>
+                      <span class="text-gray-300">Web Application Development</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">移动应用开发</span>
+                      <span class="text-gray-300">Mobile Application Development</span>
                     </div>
                   </div>
                   <div class="space-y-2">
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">微服务架构</span>
+                      <span class="text-gray-300">Microservices Architecture</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">云原生应用</span>
+                      <span class="text-gray-300">Cloud-Native Applications</span>
                     </div>
                   </div>
                 </div>
@@ -168,52 +168,6 @@
                   <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Spring Boot</span>
                   <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Flutter</span>
                   <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Kubernetes</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 云服务与DevOps -->
-          <div class="relative">
-            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur opacity-20"></div>
-            <div class="relative bg-zinc-800/50 p-8 rounded-2xl border border-zinc-700/50">
-              <div class="flex items-center space-x-4 mb-6">
-                <div class="bg-gradient-to-br from-blue-600 to-cyan-500 w-12 h-12 rounded-xl flex items-center justify-center">
-                  <Cloud class="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h3 class="text-xl font-semibold text-white">云服务与DevOps</h3>
-                </div>
-              </div>
-              <div class="space-y-4">
-                <p class="text-gray-300">提供云原生解决方案和自动化运维服务</p>
-                <div class="grid grid-cols-2 gap-4">
-                  <div class="space-y-2">
-                    <div class="flex items-center space-x-2">
-                      <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">容器化部署</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                      <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">CI/CD流水线</span>
-                    </div>
-                  </div>
-                  <div class="space-y-2">
-                    <div class="flex items-center space-x-2">
-                      <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">监控告警</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                      <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">自动化运维</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-wrap gap-2 mt-4">
-                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Docker</span>
-                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">K8s</span>
-                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Jenkins</span>
-                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Prometheus</span>
                 </div>
               </div>
             </div>
@@ -228,43 +182,89 @@
                   <Shield class="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-white">安全与合规</h3>
+                  <h3 class="text-xl font-semibold text-white">Security & Compliance</h3>
                 </div>
               </div>
               <div class="space-y-4">
-                <p class="text-gray-300">确保系统安全，符合行业合规要求</p>
+                <p class="text-gray-300">Compliant with industry security standards</p>
                 <div class="grid grid-cols-2 gap-4">
                   <div class="space-y-2">
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">安全评估</span>
+                      <span class="text-gray-300">Security Assessment</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">漏洞修复</span>
+                      <span class="text-gray-300">Vulnerability Remediation</span>
                     </div>
                   </div>
                   <div class="space-y-2">
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">合规认证</span>
+                      <span class="text-gray-300">Compliance Certification</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">安全培训</span>
+                      <span class="text-gray-300">Security Training</span>
                     </div>
                   </div>
                 </div>
                 <div class="flex flex-wrap gap-2 mt-4">
-                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">等保三级</span>
+                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Level 3 Protection</span>
                   <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">ISO27001</span>
-                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">渗透测试</span>
-                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">安全审计</span>
+                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Penetration Testing</span>
+                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Security Audit</span>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- 云服务与DevOps -->
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur opacity-20"></div>
+            <div class="relative bg-zinc-800/50 p-8 rounded-2xl border border-zinc-700/50">
+              <div class="flex items-center space-x-4 mb-6">
+                <div class="bg-gradient-to-br from-blue-600 to-cyan-500 w-12 h-12 rounded-xl flex items-center justify-center">
+                  <Cloud class="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-white">Cloud Services & DevOps</h3>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <p class="text-gray-300">Providing cloud-native solutions and automated operations services</p>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="space-y-2">
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <span class="text-gray-300">Containerized Deployment</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <span class="text-gray-300">CI/CD Pipeline</span>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <span class="text-gray-300">Monitoring & Alerting</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                      <span class="text-gray-300">Automated Operations</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Docker</span>
+                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">K8s</span>
+                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Jenkins</span>
+                  <span class="px-3 py-1 bg-zinc-700/50 text-cyan-400 rounded-full text-sm">Prometheus</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <!-- 数据分析 -->
           <div class="relative">
             <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur opacity-20"></div>
@@ -274,30 +274,30 @@
                   <LineChart class="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-white">数据分析</h3>
+                  <h3 class="text-xl font-semibold text-white">Data Analytics</h3>
                 </div>
               </div>
               <div class="space-y-4">
-                <p class="text-gray-300">提供数据分析和可视化解决方案</p>
+                <p class="text-gray-300">Providing data analysis and visualization solutions</p>
                 <div class="grid grid-cols-2 gap-4">
                   <div class="space-y-2">
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">数据挖掘</span>
+                      <span class="text-gray-300">Data Mining</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">BI报表</span>
+                      <span class="text-gray-300">BI Reporting</span>
                     </div>
                   </div>
                   <div class="space-y-2">
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">预测分析</span>
+                      <span class="text-gray-300">Predictive Analytics</span>
                     </div>
                     <div class="flex items-center space-x-2">
                       <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                      <span class="text-gray-300">数据可视化</span>
+                      <span class="text-gray-300">Data Visualization</span>
                     </div>
                   </div>
                 </div>
@@ -318,8 +318,8 @@
     <section id="process" class="relative py-24 bg-gradient-to-br from-zinc-900 via-gray-900 to-zinc-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">服务流程</h2>
-          <p class="text-xl text-gray-300">专业规范的项目管理流程</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Service Process</h2>
+          <p class="text-xl text-gray-300">Professional and Standardized Project Management Process</p>
         </div>
         
         <div class="grid md:grid-cols-4 gap-8">
@@ -327,32 +327,32 @@
             <div class="bg-gradient-to-br from-cyan-500 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
               <FileSearch class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-white mb-3">需求分析</h3>
-            <p class="text-gray-300">深入了解业务需求，制定解决方案</p>
+            <h3 class="text-xl font-semibold text-white mb-3">Requirements Analysis</h3>
+            <p class="text-gray-300">Deep understanding of business requirements and solution development</p>
           </div>
           
           <div class="group bg-zinc-800/50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-zinc-700/50 hover:border-cyan-500/50">
             <div class="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
               <Layout class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-white mb-3">方案设计</h3>
-            <p class="text-gray-300">技术架构设计，制定开发计划</p>
+            <h3 class="text-xl font-semibold text-white mb-3">Solution Design</h3>
+            <p class="text-gray-300">Technical architecture design and development planning</p>
           </div>
           
           <div class="group bg-zinc-800/50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-zinc-700/50 hover:border-cyan-500/50">
             <div class="bg-gradient-to-br from-cyan-500 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
               <Code2 class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-white mb-3">开发实现</h3>
-            <p class="text-gray-300">敏捷开发，持续集成与部署</p>
+            <h3 class="text-xl font-semibold text-white mb-3">Development Implementation</h3>
+            <p class="text-gray-300">Agile development with continuous integration and deployment</p>
           </div>
           
           <div class="group bg-zinc-800/50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-zinc-700/50 hover:border-cyan-500/50">
             <div class="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
               <Server class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-white mb-3">部署运维</h3>
-            <p class="text-gray-300">系统部署，运维监控与支持</p>
+            <h3 class="text-xl font-semibold text-white mb-3">Deployment & Operations</h3>
+            <p class="text-gray-300">System deployment, operations monitoring and support</p>
           </div>
         </div>
       </div>
@@ -362,8 +362,8 @@
     <section id="advantages" class="relative py-24 bg-gradient-to-br from-gray-900 via-zinc-900 to-gray-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">核心优势</h2>
-          <p class="text-xl text-gray-300">专业的技术团队，丰富的项目经验</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Core Advantages</h2>
+          <p class="text-xl text-gray-300">Professional Technical Team with Rich Project Experience</p>
         </div>
         
         <div class="grid md:grid-cols-2 gap-8">
@@ -378,12 +378,12 @@
                   </div>
                   <div>
                     <h3 class="text-2xl font-bold text-white">10+</h3>
-                    <p class="text-sm text-gray-300">年行业经验</p>
+                    <p class="text-sm text-gray-300">Years Experience</p>
                   </div>
                 </div>
                 <div class="space-y-2">
                   <div class="flex items-center justify-between">
-                    <span class="text-sm text-gray-400">技术积累</span>
+                    <span class="text-sm text-gray-400">Technical Expertise</span>
                     <span class="text-sm text-cyan-400">95%</span>
                   </div>
                   <div class="h-1.5 bg-zinc-700 rounded-full">
@@ -402,12 +402,12 @@
                   </div>
                   <div>
                     <h3 class="text-2xl font-bold text-white">300+</h3>
-                    <p class="text-sm text-gray-300">成功案例</p>
+                    <p class="text-sm text-gray-300">Success Cases</p>
                   </div>
                 </div>
                 <div class="space-y-2">
                   <div class="flex items-center justify-between">
-                    <span class="text-sm text-gray-400">客户满意度</span>
+                    <span class="text-sm text-gray-400">Client Satisfaction</span>
                     <span class="text-sm text-cyan-400">98%</span>
                   </div>
                   <div class="h-1.5 bg-zinc-700 rounded-full">
@@ -426,12 +426,12 @@
                   </div>
                   <div>
                     <h3 class="text-2xl font-bold text-white">50+</h3>
-                    <p class="text-sm text-gray-300">技术专家</p>
+                    <p class="text-sm text-gray-300">Tech Experts</p>
                   </div>
                 </div>
                 <div class="space-y-2">
                   <div class="flex items-center justify-between">
-                    <span class="text-sm text-gray-400">团队规模</span>
+                    <span class="text-sm text-gray-400">Team Size</span>
                     <span class="text-sm text-cyan-400">100+</span>
                   </div>
                   <div class="h-1.5 bg-zinc-700 rounded-full">
@@ -450,13 +450,13 @@
                   </div>
                   <div>
                     <h3 class="text-2xl font-bold text-white">24/7</h3>
-                    <p class="text-sm text-gray-300">技术支持</p>
+                    <p class="text-sm text-gray-300">Technical Support</p>
                   </div>
                 </div>
                 <div class="space-y-2">
                   <div class="flex items-center justify-between">
-                    <span class="text-sm text-gray-400">响应时间</span>
-                    <span class="text-sm text-cyan-400">15分钟</span>
+                    <span class="text-sm text-gray-400">Response Time</span>
+                    <span class="text-sm text-cyan-400">15 Minutes</span>
                   </div>
                   <div class="h-1.5 bg-zinc-700 rounded-full">
                     <div class="h-1.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full" style="width: 90%"></div>
@@ -476,11 +476,11 @@
                     <Code2 class="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 class="text-lg font-semibold text-white">全栈技术</h3>
+                    <h3 class="text-lg font-semibold text-white">Full-Stack Technology</h3>
                   </div>
                 </div>
                 <div class="space-y-2">
-                  <p class="text-sm text-gray-300">覆盖前后端全技术栈</p>
+                  <p class="text-sm text-gray-300">Covering frontend and backend technology stack</p>
                   <div class="flex flex-wrap gap-2 mt-2">
                     <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">Vue3/React</span>
                     <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">Spring Boot</span>
@@ -497,13 +497,13 @@
                     <Shield class="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 class="text-lg font-semibold text-white">安全合规</h3>
+                    <h3 class="text-lg font-semibold text-white">Security & Compliance</h3>
                   </div>
                 </div>
                 <div class="space-y-2">
-                  <p class="text-sm text-gray-300">符合行业安全标准</p>
+                  <p class="text-sm text-gray-300">Compliant with industry security standards</p>
                   <div class="flex flex-wrap gap-2 mt-2">
-                    <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">等保三级</span>
+                    <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">Level 3 Protection</span>
                     <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">ISO27001</span>
                   </div>
                 </div>
@@ -518,11 +518,11 @@
                     <Zap class="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 class="text-lg font-semibold text-white">敏捷开发</h3>
+                    <h3 class="text-lg font-semibold text-white">Agile Development</h3>
                   </div>
                 </div>
                 <div class="space-y-2">
-                  <p class="text-sm text-gray-300">快速响应需求变化</p>
+                  <p class="text-sm text-gray-300">Quick response to requirement changes</p>
                   <div class="flex flex-wrap gap-2 mt-2">
                     <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">Scrum</span>
                     <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">CI/CD</span>
@@ -539,14 +539,14 @@
                     <Globe class="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 class="text-lg font-semibold text-white">全球服务</h3>
+                    <h3 class="text-lg font-semibold text-white">Global Services</h3>
                   </div>
                 </div>
                 <div class="space-y-2">
-                  <p class="text-sm text-gray-300">支持多语言多时区</p>
+                  <p class="text-sm text-gray-300">Support for multiple languages and time zones</p>
                   <div class="flex flex-wrap gap-2 mt-2">
-                    <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">多语言</span>
-                    <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">多时区</span>
+                    <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">Multi-language</span>
+                    <span class="px-2 py-0.5 bg-zinc-700/50 text-cyan-400 rounded-full text-xs">Multi-timezone</span>
                   </div>
                 </div>
               </div>
@@ -560,9 +560,9 @@
     <section id="value" class="relative py-24 bg-gradient-to-br from-zinc-900 via-gray-900 to-zinc-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">客户价值导向</h2>
-          <p class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 font-medium mb-8">代码未来 —— 您的专属技术合伙人</p>
-          <p class="text-xl text-gray-300 mb-12">我们不只是开发者，更是业务伙伴</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Customer Value Orientation</h2>
+          <p class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 font-medium mb-8">Code Future — Your Dedicated Technology Partner</p>
+          <p class="text-xl text-gray-300 mb-12">We are not just developers, but business partners</p>
         </div>
         
         <div class="grid md:grid-cols-3 gap-8 mb-16">
@@ -570,24 +570,24 @@
             <div class="bg-gradient-to-br from-cyan-500 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
               <DollarSign class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-white mb-3">成本优化方案</h3>
-            <p class="text-gray-300">灵活的外包模式降低50%人力成本</p>
+            <h3 class="text-xl font-semibold text-white mb-3">Cost Optimization Solutions</h3>
+            <p class="text-gray-300">Flexible outsourcing model reduces 50% labor costs</p>
           </div>
           
           <div class="group bg-zinc-800/50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-zinc-700/50 hover:border-cyan-500/50">
             <div class="bg-gradient-to-br from-cyan-500 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
               <Building2 class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-white mb-3">行业定制开发</h3>
-            <p class="text-gray-300">深耕金融、医疗、零售领域，提供合规化设计</p>
+            <h3 class="text-xl font-semibold text-white mb-3">Industry Custom Development</h3>
+            <p class="text-gray-300">Deep expertise in finance, healthcare, retail sectors with compliance design</p>
           </div>
           
           <div class="group bg-zinc-800/50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-zinc-700/50 hover:border-cyan-500/50">
             <div class="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
               <ShieldCheck class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-white mb-3">安全合规保障</h3>
-            <p class="text-gray-300">符合行业标准，确保数据安全与隐私保护</p>
+            <h3 class="text-xl font-semibold text-white mb-3">Security & Compliance Guarantee</h3>
+            <p class="text-gray-300">Compliant with industry standards, ensuring data security and privacy protection</p>
           </div>
         </div>
       </div>
@@ -597,8 +597,8 @@
     <section id="cooperation" class="relative py-24 bg-gradient-to-br from-gray-900 via-zinc-900 to-gray-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">合作模式</h2>
-          <p class="text-xl text-gray-300">灵活多样的合作方式，满足不同需求</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Cooperation Models</h2>
+          <p class="text-xl text-gray-300">Flexible and diverse cooperation methods to meet different needs</p>
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -606,11 +606,11 @@
             <div class="bg-gradient-to-br from-cyan-500 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Users class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-white mb-3">技术团队外包</h3>
+            <h3 class="text-xl font-semibold text-white mb-3">Technical Team Outsourcing</h3>
             <div class="space-y-3">
-              <p class="text-gray-300">• 按需驻场/远程协作</p>
-              <p class="text-gray-300">• 灵活配置技术团队</p>
-              <p class="text-gray-300">• 快速响应业务需求</p>
+              <p class="text-gray-300">• On-site/Remote collaboration as needed</p>
+              <p class="text-gray-300">• Flexible technical team configuration</p>
+              <p class="text-gray-300">• Quick response to business requirements</p>
             </div>
           </div>
           
@@ -618,11 +618,11 @@
             <div class="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Settings class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-white mb-3">项目定制开发</h3>
+            <h3 class="text-xl font-semibold text-white mb-3">Project Custom Development</h3>
             <div class="space-y-3">
-              <p class="text-gray-300">• 需求分析与规划</p>
-              <p class="text-gray-300">• 产品设计与开发</p>
-              <p class="text-gray-300">• 测试与部署上线</p>
+              <p class="text-gray-300">• Requirements analysis and planning</p>
+              <p class="text-gray-300">• Product design and development</p>
+              <p class="text-gray-300">• Testing and deployment</p>
             </div>
           </div>
           
@@ -630,11 +630,11 @@
             <div class="bg-gradient-to-br from-cyan-500 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Shield class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-white mb-3">技术咨询服务</h3>
+            <h3 class="text-xl font-semibold text-white mb-3">Technical Consulting Services</h3>
             <div class="space-y-3">
-              <p class="text-gray-300">• 技术架构设计</p>
-              <p class="text-gray-300">• 性能优化方案</p>
-              <p class="text-gray-300">• 安全合规咨询</p>
+              <p class="text-gray-300">• Technical architecture design</p>
+              <p class="text-gray-300">• Performance optimization solutions</p>
+              <p class="text-gray-300">• Security and compliance consulting</p>
             </div>
           </div>
         </div>
@@ -643,51 +643,61 @@
 
     <!-- 页脚 -->
     <footer class="bg-gradient-to-br from-zinc-900 to-gray-900 text-white py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-4 gap-12">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-12">
           <!-- 公司信息 -->
           <div class="space-y-4">
             <div class="flex flex-col">
-              <span class="text-2xl font-bold">代码未来</span>
-              <span class="text-sm text-cyan-400">智创无限</span>
+              <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                <div class="relative bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-xl shadow-lg shadow-blue-500/30 font-bold text-lg flex items-center space-x-2 group-hover:scale-105 transition-all duration-300">
+                  <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                  <span>WuHan BaiRui</span>
+                  <div class="w-1 h-1 bg-white/60 rounded-full"></div>
+                </div>
+              </div>
+              <!-- <div class="mt-2 flex items-center space-x-2">
+                <div class="w-1 h-1 bg-cyan-400 rounded-full animate-ping"></div>
+                <span class="text-cyan-400 text-xs font-medium tracking-wider">代码未来科技</span>
+              </div> -->
             </div>
-            <p class="text-gray-400 text-sm">专注高端软件定制与数字化转型解决方案</p>
+            <p class="text-gray-400 text-sm">Focused on high-end software customization and digital transformation solutions</p>
           </div>
 
           <!-- 技术栈 -->
           <div>
-            <h3 class="text-lg font-semibold mb-4">技术栈</h3>
+            <h3 class="text-lg font-semibold mb-4">Technology Stack</h3>
             <div class="space-y-2">
-              <p class="text-gray-400">前端：Vue3/React/TypeScript</p>
-              <p class="text-gray-400">后端：Java/Spring Boot/Node.js</p>
-              <p class="text-gray-400">云原生：Docker/Kubernetes</p>
+              <p class="text-gray-400">Frontend: Vue3/React/TypeScript</p>
+              <p class="text-gray-400">Backend: Java/Spring Boot/Node.js</p>
+              <p class="text-gray-400">Cloud Native: Docker/Kubernetes</p>
             </div>
           </div>
 
           <!-- 联系方式 -->
           <div>
-            <h3 class="text-lg font-semibold mb-4">联系我们</h3>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
             <div class="space-y-2">
-              <p class="text-gray-400">电话：400-888-8888</p>
-              <p class="text-gray-400">邮箱：contact@codefuture.com</p>
-              <p class="text-gray-400">地址：北京市朝阳区科技园区</p>
+              <!-- <p class="text-gray-400">电话：400-888-8888</p> -->
+              <p class="text-gray-400">Email: WHBaiRuiT@poraytech.com</p>
+              <p class="text-gray-400">Address: Wuhan, Hubei Province</p>
             </div>
           </div>
 
           <!-- 关注我们 -->
-          <div>
+          <!-- <div>
             <h3 class="text-lg font-semibold mb-4">关注我们</h3>
             <div class="space-y-2">
               <p class="text-gray-400">微信公众号：代码未来</p>
               <p class="text-gray-400">知乎：代码未来科技</p>
               <p class="text-gray-400">微博：@代码未来</p>
             </div>
-          </div>
+          </div> -->
         </div>
         
         <!-- 版权信息 -->
         <div class="mt-12 pt-8 border-t border-zinc-700 text-center">
-          <p class="text-gray-400 text-sm">© 2024 代码未来科技有限公司. All rights reserved.</p>
+          <p class="text-gray-400 text-sm">© 2025 Wuhan Bairui Technology Co., Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -702,11 +712,11 @@ import {
   Building2, ShieldCheck, Package, RefreshCw, FileText, Layout, Code, Server, FileSearch, Code2, Cloud, LineChart 
 } from 'lucide-vue-next'
 
-// 平滑滚动到指定区域
+// Smooth scroll to specified section
 const scrollToSection = (sectionId) => {
   const element = document.getElementById(sectionId)
   if (element) {
-    const navHeight = 64 // 导航栏高度
+    const navHeight = 64 // Navigation bar height
     const elementPosition = element.getBoundingClientRect().top
     const offsetPosition = elementPosition + window.pageYOffset - navHeight
 
@@ -719,7 +729,7 @@ const scrollToSection = (sectionId) => {
 </script>
 
 <style>
-/* 动画关键帧 */
+/* Animation keyframes */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -731,13 +741,13 @@ const scrollToSection = (sectionId) => {
   }
 }
 
-/* 动画类 */
+/* Animation classes */
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
   opacity: 0;
 }
 
-/* 动画延迟 */
+/* Animation delays */
 .animation-delay-200 {
   animation-delay: 0.2s;
 }
@@ -770,12 +780,12 @@ const scrollToSection = (sectionId) => {
   animation-delay: 1.6s;
 }
 
-/* 滚动行为 */
+/* Scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* 导航栏样式 */
+/* Navigation bar styles */
 nav {
   transition: all 0.3s ease;
 }
@@ -785,7 +795,7 @@ nav.scrolled {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 添加新的动画效果 */
+/* Add new animation effects */
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -802,7 +812,7 @@ nav.scrolled {
   animation: float 3s ease-in-out infinite;
 }
 
-/* 优化背景图片加载 */
+/* Optimize background image loading */
 .bg-image {
   background-size: cover;
   background-position: center;
