@@ -41,11 +41,12 @@
         <div class="max-w-[1200px] mx-auto">
           <div class="grid md:grid-cols-2 gap-24 items-center">
             <!-- 左侧内容 -->
-            <div class="relative z-10 lg:w-1/2">
+            <div class="relative z-10">
               <div class="text-center lg:text-left">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                  <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 whitespace-nowrap">Professional Software Development</span>
-                  <span class="text-white whitespace-nowrap">Solution Provider</span>
+                  <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">Professional Software Development</span>
+                  <br/>
+                  <span class="text-white">Solution Provider</span>
                 </h1>
                 <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
                   Focused on providing comprehensive software development services for enterprises, including full-stack development, cloud services, DevOps, security compliance and other solutions
