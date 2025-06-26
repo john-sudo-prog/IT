@@ -653,7 +653,7 @@
                 <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
                 <div class="relative bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-xl shadow-lg shadow-blue-500/30 font-bold text-lg flex items-center space-x-2 group-hover:scale-105 transition-all duration-300">
                   <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                  <span>WuHan BaiRui</span>
+                  <span>WuHan BoRui</span>
                   <div class="w-1 h-1 bg-white/60 rounded-full"></div>
                 </div>
               </div>
@@ -680,8 +680,7 @@
             <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
             <div class="space-y-2">
               <!-- <p class="text-gray-400">电话：400-888-8888</p> -->
-              <p class="text-gray-400">Email: WHBaiRuiT@poraytech.com</p>
-              <p class="text-gray-400">Address: Wuhan, Hubei Province</p>
+              <p class="text-gray-400">Email: suport@poraytech.com</p>
             </div>
           </div>
 
@@ -698,7 +697,7 @@
         
         <!-- 版权信息 -->
         <div class="mt-12 pt-8 border-t border-zinc-700 text-center">
-          <p class="text-gray-400 text-sm">© 2025 Wuhan Bairui Technology Co., Ltd. All rights reserved.</p>
+          <p class="text-gray-400 text-sm">Wuhan BoRui Technology Co., Ltd.</p>
         </div>
       </div>
     </footer>
