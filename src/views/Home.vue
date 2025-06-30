@@ -18,7 +18,7 @@
               <a href="#process" @click.prevent="scrollToSection('process')" class="text-gray-300 hover:text-blue-400 transition-colors">Process</a>
               <a href="#advantages" @click.prevent="scrollToSection('advantages')" class="text-gray-300 hover:text-blue-400 transition-colors">Advantages</a>
               <a href="#value" @click.prevent="scrollToSection('value')" class="text-gray-300 hover:text-blue-400 transition-colors">Value</a>
-              <button class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300">Contact Us</button>
+              <button @click.prevent="scrollToSection('contact')" class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300">Contact Us</button>
             </div>
           </div>
         </div>
@@ -643,7 +643,7 @@
     </section>
 
     <!-- 页脚 -->
-    <footer class="bg-gradient-to-br from-zinc-900 to-gray-900 text-white py-16">
+    <footer id="contact" class="bg-gradient-to-br from-zinc-900 to-gray-900 text-white py-16">
       <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-12">
           <!-- 公司信息 -->
@@ -680,7 +680,7 @@
             <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
             <div class="space-y-2">
               <!-- <p class="text-gray-400">电话：400-888-8888</p> -->
-              <p class="text-gray-400">Email: suport@poraytech.com</p>
+              <p class="text-gray-400">Email: support@poraytech.com</p>
             </div>
           </div>
 
