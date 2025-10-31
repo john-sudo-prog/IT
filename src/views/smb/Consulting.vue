@@ -1,29 +1,30 @@
 <template>
-  <div class="bg-white min-h-screen">
-    <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-gray-100">
+  <div class="min-h-screen">
+    <header class="sticky top-0 z-30 glass-header">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between text-gray-800">
         <div class="flex items-center gap-3">
           <img :src="logoUrl" alt="LOGO" class="h-9 w-auto" />
           <router-link to="/" class="font-semibold">点一云</router-link>
         </div>
         <nav class="hidden md:flex items-center gap-8 text-sm">
-          <router-link to="/" class="hover:text-indigo-600">首页</router-link>
-          <a href="/#services" class="hover:text-indigo-600">云服务产品</a>
-          <a href="/#solutions" class="hover:text-indigo-600">SMB服务级别</a>
-          <a href="/#cases" class="hover:text-indigo-600">成功案例</a>
-          <a href="/#about" class="hover:text-indigo-600">关于我们</a>
-          <a href="/#contact" class="hover:text-indigo-600">联系我们</a>
+          <router-link to="/" class="link">首页</router-link>
+          <router-link :to="{ path: '/', hash: '#services' }" class="link">云服务产品</router-link>
+          <router-link :to="{ path: '/', hash: '#solutions' }" class="link">SMB服务级别</router-link>
+          <router-link :to="{ path: '/', hash: '#cases' }" class="link">成功案例</router-link>
+          <router-link :to="{ path: '/', hash: '#about' }" class="link">关于我们</router-link>
+          <router-link :to="{ path: '/', hash: '#contact' }" class="link">联系我们</router-link>
         </nav>
       </div>
     </header>
 
-    <section class="relative isolate text-white overflow-hidden">
-      <div class="absolute inset-0 -z-10 bg-slate-900">
-        <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-gradient-to-br from-fuchsia-400/40 to-indigo-500/40 blur-3xl"></div>
-        <div class="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-gradient-to-tr from-amber-300/40 to-rose-400/40 blur-3xl"></div>
+    <section class="relative isolate overflow-hidden">
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-sky-50 to-blue-50"></div>
+        <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-gradient-to-br from-sky-200/60 to-indigo-200/60 blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-gradient-to-tr from-teal-200/50 to-sky-200/50 blur-3xl"></div>
       </div>
       <div class="max-w-7xl mx-auto px-6 py-16 text-center">
-        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">云咨询与战略</h1>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800">云咨询与战略</h1>
       </div>
     </section>
 
@@ -73,7 +74,7 @@
       <section class="mt-12">
         <h3 class="text-2xl font-semibold mb-4">2.3 实施最佳实践</h3>
         <h4 class="text-xl font-semibold">最佳实践框架</h4>
-        <p class="text-gray-700">遵循 <a href="https://aws.amazon.com/architecture/well-architected/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">AWS Well-Architected Framework</a> 六大支柱：卓越操作性、安全性、可靠性、性能效率、成本优化、可持续性。</p>
+        <p class="text-gray-700">遵循 <a href="https://aws.amazon.com/architecture/well-architected/" target="_blank" rel="noopener noreferrer" class="link">AWS Well-Architected Framework</a> 六大支柱：卓越操作性、安全性、可靠性、性能效率、成本优化、可持续性。</p>
         <h4 class="text-xl font-semibold mt-6">持续改进与赋能</h4>
         <ul class="list-disc pl-6 space-y-2 text-gray-700">
           <li>持续反馈与调整：基于运行数据与使用反馈，滚动优化架构与治理策略。</li>
@@ -87,7 +88,7 @@
       </section>
 
       <div class="mt-12">
-        <router-link to="/" class="inline-block px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-indigo-500 via-sky-500 to-cyan-400 shadow-lg shadow-sky-900/20 hover:opacity-95">← 返回首页</router-link>
+        <router-link to="/" class="btn btn-primary">← 返回首页</router-link>
       </div>
     </main>
   </div>

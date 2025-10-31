@@ -1,23 +1,23 @@
 <template>
-  <div class="bg-white">
+  <div>
     <!-- Navbar -->
-    <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-gray-100">
+    <header class="sticky top-0 z-30 glass-header">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between text-gray-800">
         <div class="flex items-center gap-3">
           <img :src="logoUrl" alt="LOGO" class="h-9 w-auto" />
         </div>
         <nav class="hidden md:flex items-center gap-8 text-sm">
-          <router-link to="/" class="hover:text-indigo-600">首页</router-link>
-          <a href="/#services" class="hover:text-indigo-600">云服务产品</a>
-          <a href="/#solutions" class="hover:text-indigo-600">SMB服务级别</a>
-          <a href="/#cases" class="hover:text-indigo-600">成功案例</a>
-          <a href="/#about" class="hover:text-indigo-600">关于我们</a>
-          <a href="/#contact" class="hover:text-indigo-600">联系我们</a>
+          <router-link to="/" class="link">首页</router-link>
+          <router-link :to="{ path: '/', hash: '#services' }" class="link">云服务产品</router-link>
+          <router-link :to="{ path: '/', hash: '#solutions' }" class="link">SMB服务级别</router-link>
+          <router-link :to="{ path: '/', hash: '#cases' }" class="link">成功案例</router-link>
+          <router-link :to="{ path: '/', hash: '#about' }" class="link">关于我们</router-link>
+          <router-link :to="{ path: '/', hash: '#contact' }" class="link">联系我们</router-link>
         </nav>
       </div>
     </header>
 
-    <section class="py-20 bg-white">
+    <section class="py-20">
       <div class="max-w-6xl mx-auto px-6">
         <h2 class="text-center text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-10">基础设施管理详述</h2>
         <h3 class="text-2xl font-semibold mt-10 mb-4 text-center">监控和维护</h3>
@@ -40,28 +40,28 @@
       </div>
     </section>
 
-    <footer class="border-t border-gray-100 py-10">
+    <footer class="py-10 bg-gray-900 text-gray-300">
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-6 mb-6">
           <div>
-            <h4 class="font-semibold mb-3">服务产品</h4>
-            <ul class="space-y-2 text-gray-600">
-              <li><a href="/#services" class="hover:text-blue-600">云咨询与战略</a></li>
-              <li><a href="/#services" class="hover:text-blue-600">云迁移服务</a></li>
-              <li><a href="/#services" class="hover:text-blue-600">基础设施管理</a></li>
-              <li><a href="/#services" class="hover:text-blue-600">云安全与优化</a></li>
+            <h4 class="font-semibold mb-3 text-white">服务产品</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><router-link :to="{ path: '/', hash: '#services' }" class="text-sky-300 hover:text-sky-200 underline underline-offset-4">云咨询与战略</router-link></li>
+              <li><router-link :to="{ path: '/', hash: '#services' }" class="text-sky-300 hover:text-sky-200 underline underline-offset-4">云迁移服务</router-link></li>
+              <li><router-link :to="{ path: '/', hash: '#services' }" class="text-sky-300 hover:text-sky-200 underline underline-offset-4">基础设施管理</router-link></li>
+              <li><router-link :to="{ path: '/', hash: '#services' }" class="text-sky-300 hover:text-sky-200 underline underline-offset-4">云安全与优化</router-link></li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold mb-3">公司</h4>
-            <ul class="space-y-2 text-gray-600">
-              <li><a href="/#about" class="hover:text-blue-600">关于我们</a></li>
-              <li><a href="/#cases" class="hover:text-blue-600">成功案例</a></li>
-              <li><a href="/#contact" class="hover:text-blue-600">联系我们</a></li>
+            <h4 class="font-semibold mb-3 text-white">公司</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><router-link :to="{ path: '/', hash: '#about' }" class="text-sky-300 hover:text-sky-200 underline underline-offset-4">关于我们</router-link></li>
+              <li><router-link :to="{ path: '/', hash: '#cases' }" class="text-sky-300 hover:text-sky-200 underline underline-offset-4">成功案例</router-link></li>
+              <li><router-link :to="{ path: '/', hash: '#contact' }" class="text-sky-300 hover:text-sky-200 underline underline-offset-4">联系我们</router-link></li>
             </ul>
           </div>
         </div>
-        <p class="text-sm text-gray-500">© 2025 DYCloud.ltd 保留所有权利.</p>
+        <p class="text-sm text-gray-400">© 2025 DYCloud.ltd 保留所有权利.</p>
       </div>
     </footer>
   </div>

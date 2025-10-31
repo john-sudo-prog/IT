@@ -12,6 +12,11 @@
   }
 }
 
+/* Ensure anchors are not hidden under sticky header */
+@layer base {
+  [id] { scroll-margin-top: 88px; }
+}
+
 @layer components {
   .btn {
     @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
@@ -33,3 +38,157 @@
     @apply text-lg text-gray-600 mb-8 max-w-2xl mx-auto;
   }
 } 
+
+@layer components {
+  /* Colorful card variants */
+  .card {
+    @apply relative overflow-hidden p-8 md:p-10 rounded-3xl shadow-md border border-gray-200/80 bg-white/90 backdrop-blur-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5;
+  }
+  .card-mint {
+    @apply border border-emerald-200/70 bg-gradient-to-br from-emerald-50 to-teal-50;
+  }
+  .card-lavender {
+    @apply border border-violet-200/70 bg-gradient-to-br from-violet-50 to-fuchsia-50;
+  }
+  .card-sun {
+    @apply border border-amber-200/70 bg-gradient-to-br from-amber-50 to-orange-50;
+  }
+  .card-coral {
+    @apply border border-rose-200/70 bg-gradient-to-br from-rose-50 to-pink-50;
+  }
+
+  /* Soft pill underline for section headings */
+  .title-underline {
+    @apply h-1 w-20 mx-auto rounded-full bg-gradient-to-r from-sky-400 to-indigo-400;
+  }
+
+  /* Header glass effect */
+  .glass-header {
+    @apply bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-white/40 shadow-sm;
+  }
+
+  /* Primary link style */
+  .link {
+    @apply text-sky-700 hover:text-sky-900 underline decoration-sky-300/70 hover:decoration-sky-500 underline-offset-4;
+  }
+}
+
+/* Tech aesthetic helpers */
+.tech-grid {
+  position: relative;
+  background-image:
+    linear-gradient(rgba(2, 132, 199, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(2, 132, 199, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px, 24px 24px;
+  background-position: center center;
+}
+
+.spin-slow {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.orbit-accent {
+  position: absolute;
+  inset: auto auto -3rem -3rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 9999px;
+  background: conic-gradient(from 0deg, rgba(14,165,233,.2), rgba(168,85,247,.2), rgba(236,72,153,.2), rgba(14,165,233,.2));
+  filter: blur(20px);
+  opacity: .6;
+}
+
+.card-tech {
+  background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #7dd3fc, #a78bfa, #fda4af);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border: 1px solid transparent;
+}
+
+.glow-hover:hover {
+  box-shadow: 0 10px 30px rgba(14,165,233,0.15);
+}
+
+/* Card typography scale for a grand look */
+@layer components {
+  .card h3, .card h4 {
+    @apply text-xl md:text-2xl tracking-tight;
+  }
+  .card p {
+    @apply leading-7;
+  }
+}
+
+/* Premium accents */
+.card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa, #fda4af);
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #0b3b5a;
+  background: linear-gradient(135deg, #e0f2fe, #ddd6fe);
+  border-radius: 9999px;
+  box-shadow: 0 6px 16px rgba(2,132,199,.15);
+}
+
+/* Section layering helpers */
+@layer components {
+  .section-alt {
+    @apply bg-slate-50;
+  }
+  .section-surface {
+    @apply max-w-7xl mx-auto px-6 md:px-8 py-10 md:py-12 rounded-3xl bg-white ring-1 ring-gray-200/70 shadow-sm;
+  }
+}
+
+/* Give testimonials a bit more breathing room */
+#testimonials .section-surface {
+  padding-bottom: 3rem;
+}
+
+/* Carousel for testimonials */
+@layer components {
+  .carousel { @apply relative; overflow-x: hidden; overflow-y: visible; padding-top: 0.5rem; padding-bottom: 1rem; }
+  .carousel-track { display: flex; gap: 1.5rem; width: max-content; padding-inline: 0.5rem; animation: slide-left 36s linear infinite; will-change: transform; }
+  .carousel:hover .carousel-track { animation-play-state: paused; }
+}
+
+@keyframes slide-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-25%); }
+}
+
+/* edge fade masks */
+.carousel::before,
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; width: 48px;
+  pointer-events: none;
+  z-index: 1;
+}
+.carousel::before { left: 0; background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)); }
+.carousel::after { right: 0; background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0)); }
+
+/* Prevent media distortion inside cards/feature grid */
+@layer components {
+  .card img { width: 100%; height: auto; object-fit: contain; }
+  .feature-media { @apply w-10 h-10 rounded-xl overflow-hidden shrink-0 ring-1 ring-gray-200/60 bg-white flex items-center justify-center; }
+  .feature-media img { @apply w-full h-full object-contain; }
+}
