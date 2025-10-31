@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例 | 广西锋锐信息技术服务有限公司 自营商城平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><img src="logo.CX6W3yQJ.jpg" alt="点一云LOGO" style="height:40px;"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">首页</a></li>
+                <li><a href="index.html#services">云服务产品</a></li>
+                <li><a href="index.html#solutions">SMB服务级别</a></li>
+                <li><a href="index.html#cases">成功案例</a></li>
+                <li><a href="index.html#about">关于我们</a></li>
+                <li><a href="index.html#contact">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="services" style="margin-top:80px;">
+        <div class="container">
+            <h2 class="section-title">广西锋锐信息技术服务有限公司 | 自营商城平台</h2>
+
+            <h3>1. 项目背景</h3>
+            <p>广西锋锐信息技术服务有限公司是一家中小型创新型企业，现有员工约70人，年营业额约900万美元。自成立以来，公司专注于技术研发与产品创新，业务涵盖多个方向，其中自营商城平台是公司重点发展的板块之一。</p>
+            <p>该商城平台致力于构建一个公平、透明、安全且高效的自营电商生态。平台专注于自有品牌商品销售，具备高并发处理能力，能够支持海量用户的实时商品浏览、库存查询、订单处理和支付请求，并通过顶级安全防护保障用户交易数据和个人信息安全无虞。同时，平台已实现国际化服务，能够为全球用户提供无缝的购物体验，逐步在全球市场中树立自有品牌知名度。</p>
+            <p>随着业务的不断扩展，公司计划将成功的自营商城平台从美国市场推广至新加坡市场。然而测试发现，新加坡用户访问美国服务器时存在明显延迟，尤其在大型促销活动和品牌发布会期间，网络波动更为突出。此外，随着海外用户数量的迅速增长，平台在获得市场关注的同时，也遭遇了频繁的网络攻击与DDoS攻击，对系统运行和用户购物体验造成了影响。</p>
+            <p>基于以上背景，我们建议采用亚马逊云计算技术构建自营商城平台：通过弹性伸缩以适应促销高峰、以多层安全保障客户数据与隐私，并通过自动化与标准化提升运维效率与系统稳定性。</p>
+
+            <h3>2. 项目目标</h3>
+            <ul>
+                <li><b>降低访问延迟：</b>在 AWS 新加坡区域部署 EKS 集群，显著提升新加坡及周边地区的访问速度，尤其在活动高峰期保持顺畅体验。</li>
+                <li><b>增强安全性：</b>引入 AWS Shield 与 WAF，有效抵御各类网络攻击和 DDoS 攻击，保障交易与支付流程安全稳定。</li>
+                <li><b>提升业务可用性：</b>通过 ELB 与多可用区的 EC2/EKS 部署，消除单点故障，确保核心业务持续稳定。</li>
+                <li><b>优化性能与成本：</b>使用 Auto Scaling 按需伸缩 EKS NodeGroup 规模，并结合 Reserved Instances 与成本工具优化TCO。</li>
+                <li><b>持续技术支持：</b>在 AWS 与点一云团队支持下，建立例行评估与改进机制，快速响应新场景与新需求。</li>
+            </ul>
+
+            <h3>3. 项目架构图</h3>
+            <figure class="wa-framework-figure" style="margin-top:1.5rem;">
+                <img src="case1-architecture.png" alt="商城平台 AWS 参考架构" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 10px 32px rgba(0,0,0,0.12)">
+                <figcaption style="margin-top:0.6rem;color:#666;">架构要点：EKS 工作负载、ALB 暴露服务、Aurora 主从、ElastiCache 缓存、OpenSearch 检索、WAF/Shield 防护、多可用区与自动扩缩容等</figcaption>
+            </figure>
+
+            <h3>4. 项目成果</h3>
+            <ul>
+                <li><b>显著降低访问延迟：</b>在新加坡区域部署后，页面加载与下单响应明显加速，满意度与留存率提升。</li>
+                <li><b>安全性增强：</b>WAF+Shield 组合抵御约 95% 的常见网络攻击与DDoS威胁，数据与交易更安全。</li>
+                <li><b>高可用保障：</b>ELB + 多可用区 EKS 架构将服务可用性提升至 99.9% 级别，活动高峰依然稳定。</li>
+                <li><b>性能与成本优化：</b>Auto Scaling 保障高并发稳定响应，Reserved Instances 等策略显著降低云成本。</li>
+                <li><b>持续改进能力：</b>建立性能评估与安全审计机制，持续优化，快速适配业务增长与市场扩张。</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>服务产品</h4>
+                    <ul>
+                        <li><a href="index.html#services">云咨询与战略</a></li>
+                        <li><a href="index.html#services">云迁移服务</a></li>
+                        <li><a href="index.html#services">基础设施管理</a></li>
+                        <li><a href="index.html#services">云安全与优化</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>公司</h4>
+                    <ul>
+                        <li><a href="index.html#about">关于我们</a></li>
+                        <li><a href="index.html#cases">成功案例</a></li>
+                        <li><a href="index.html#contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DYCloud.ltd 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
