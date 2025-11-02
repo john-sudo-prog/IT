@@ -2,18 +2,9 @@
   <div class="min-h-screen">
     <header class="sticky top-0 z-30 glass-header">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between text-gray-800">
-        <div class="flex items-center gap-3">
+        <router-link to="/" class="flex items-center gap-3 cursor-pointer">
           <img :src="logoUrl" alt="LOGO" class="h-9 w-auto" />
-          <router-link to="/" class="font-semibold">点一云</router-link>
-        </div>
-        <nav class="hidden md:flex items-center gap-8 text-sm">
-          <router-link to="/" class="link">首页</router-link>
-          <router-link :to="{ path: '/', hash: '#services' }" class="link">云服务产品</router-link>
-          <router-link :to="{ path: '/', hash: '#solutions' }" class="link">SMB服务级别</router-link>
-          <router-link :to="{ path: '/', hash: '#cases' }" class="link">成功案例</router-link>
-          <router-link :to="{ path: '/', hash: '#about' }" class="link">关于我们</router-link>
-          <router-link :to="{ path: '/', hash: '#contact' }" class="link">联系我们</router-link>
-        </nav>
+        </router-link>
       </div>
     </header>
 
