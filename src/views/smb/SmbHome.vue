@@ -534,15 +534,6 @@
       </div>
     </section>
 
-    <!-- 合作伙伴 -->
-    <section id="partners" class="py-12 section-alt">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="flex items-center justify-between gap-6 flex-wrap opacity-80">
-          <img v-for="(logo, idx) in partnerLogos" :key="idx" :src="logo" alt="partner" class="h-10 md:h-12 w-auto object-contain" />
-        </div>
-      </div>
-    </section>
-
     <!-- 客户评价 -->
     <section id="testimonials" class="py-16 md:py-20">
       <div class="section-surface">
@@ -634,14 +625,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import logoUrl from '@/assets/web/logo.CX6W3yQJ.jpg'
-import partner1 from '@/assets/img/partner/1.jpg'
-import partner2 from '@/assets/img/partner/2.jpg'
-import partner3 from '@/assets/img/partner/3.jpg'
-import partner4 from '@/assets/img/partner/4.jpg'
-import partner5 from '@/assets/img/partner/5.jpg'
-import partner6 from '@/assets/img/partner/6.jpg'
-
-const partnerLogos = [partner1, partner2, partner3, partner4, partner5, partner6]
 
 const testimonials = [
   { quote: '从评估到上线仅用数周，性能提升明显，成本更可控。', author: '李先生', role: '电商行业 CTO' },

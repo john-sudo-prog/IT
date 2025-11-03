@@ -165,7 +165,7 @@
 /* Carousel for testimonials */
 @layer components {
   .carousel { @apply relative; overflow-x: hidden; overflow-y: visible; padding-top: 0.5rem; padding-bottom: 1rem; }
-  .carousel-track { display: flex; gap: 1.5rem; width: max-content; padding-inline: 0.5rem; animation: slide-left 36s linear infinite; will-change: transform; }
+  .carousel-track { display: flex; gap: 1.5rem; width: max-content; padding-inline: 0.5rem; animation: slide-left 24s linear infinite; will-change: transform; }
   .carousel:hover .carousel-track { animation-play-state: paused; }
 }
 
